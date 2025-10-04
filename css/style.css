@@ -14,6 +14,13 @@ body {
   background-attachment: fixed; /* keeps image fixed while scrolling */
 }
 
+/* Mobile fix */
+@media (max-width: 768px) {
+  body {
+    background-attachment: scroll; /* allows scrolling on mobile */
+  }
+}
+
 /* Black header */
 header {
   background-color: black;
@@ -60,4 +67,5 @@ body .content p {
   margin: 0 auto;       /* centers the image */
   width: 400px;         /* sets same width for both logos */
   height: auto;         /* keeps aspect ratio */
+
 }
