@@ -1,0 +1,63 @@
+/* Base styling */
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: sans-serif;
+  color: white;
+  position: relative;
+}
+
+/* Full-page background image */
+body {
+  background: url("../images/drumline.jpg") center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed; /* keeps image fixed while scrolling */
+}
+
+/* Black header */
+header {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  position: relative;
+  z-index: 2; /* above overlay */
+}
+
+/* Subtle black overlay for readability */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5); /* adjust opacity as needed */
+  z-index: 1; /* sits between background and text/header */
+}
+
+/* Content styling */
+body .content {
+  position: relative;
+  z-index: 2; /* above overlay */
+  padding: 40px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+body .content p {
+  font-size: 1.2rem;
+}
+
+/* Logo common styling */
+.gmuid.logo,
+.spec.logo {
+  display: block;       /* allows centering */
+  margin: 0 auto;       /* centers the image */
+  width: 400px;         /* sets same width for both logos */
+  height: auto;         /* keeps aspect ratio */
+}
